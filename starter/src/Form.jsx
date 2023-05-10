@@ -11,7 +11,6 @@ const Form = () => {
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["tasks"] });
       toast.success("task added");
-      setNewItemName("");
     },
     onError: (error) => {
       // console.log(error);
